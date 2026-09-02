@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="formulario" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<form >
+    <body>
+    <h2>Formulario</h2>
+<label>Nombre de usuario:</label><br>
+    <input type="text" name="usuario" placeholder="ej: Pedrito" required><br>
+<label>Correo electrónico:</label><br>
+    <input type="email" name="correo" placeholder="ej: pedrito@gmail.com" required><br>
+
+    <label>Teléfono:</label><br>
+    <input type="tel" name="telefono" placeholder="ej: 999999999" required><br><br>
+
+    <select name="nacionalidad" required>
+        <option value="">Seleccione su nacionalidad</option>
+        <option value="chile">Chileno</option>
+        <option value="otra">Otra</option>
+    </select><br><br>
+
+    <label>Tipo de Género:</label><br>
+    <label><input type="radio" name="genero" value="masculino" required> Masculino</label><br>
+    <label><input type="radio" name="genero" value="femenino" required> Femenino</label><br>
+    <label><input type="radio" name="genero" value="otro" required> Prefiero no decir</label><br><br>
+
+    <label>Biografía:</label><br>
+    <textarea name="biografia" rows="4" cols="30" placeholder="Cuéntanos algo sobre ti..." required></textarea><br>
+    <label><input type="checkbox" name="subcripcion" value="si" required> Deseo suscribirme </label><br><br>
+
+    <input type="submit" value="Registrarse">
+
+</body>
+</form>
+</html>
