@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="formulario" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+>
     <title>Document</title>
 </head>
 <form >
@@ -15,12 +17,14 @@
 
     <label>Teléfono:</label><br>
     <input type="tel" name="telefono" placeholder="ej: 999999999" required><br><br>
-
-    <select name="nacionalidad" required>
-        <option value="">Seleccione su nacionalidad</option>
+        <div class="select">
+  <select>
+   <option value="">Seleccione su nacionalidad</option>
         <option value="chile">Chileno</option>
         <option value="otra">Otra</option>
-    </select><br><br>
+  </select>
+</div>
+<br><br>
 
     <label>Tipo de Género:</label><br>
     <label><input type="radio" name="genero" value="masculino" required> Masculino</label><br>
@@ -30,7 +34,7 @@
     <label>Biografía:</label><br>
     <textarea name="biografia" rows="4" cols="30" placeholder="Cuéntanos algo sobre ti..." required></textarea><br>
     <label><input type="checkbox" name="subcripcion" value="si" required> Deseo suscribirme </label><br><br>
-
+    <button class="button is-danger">Button</button>
     <input type="submit" value="Registrarse">
 
 </body>
