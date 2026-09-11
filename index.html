@@ -2,41 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="formulario" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
->
-    <title>Document</title>
+    <meta name="petsitter" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>petsitter</title>
 </head>
-<form >
-    <body>
-    <h2>Formulario</h2>
-<label>Nombre de usuario:</label><br>
-    <input type="text" name="usuario" placeholder="ej: Pedrito" required><br>
-<label>Correo electrónico:</label><br>
-    <input type="email" name="correo" placeholder="ej: pedrito@gmail.com" required><br>
+<body>
+  <div class="tarjeta-formulario">
+    
+    <form>
+      <h2>Petsitter</h2>
+      
+      <div class="fila campo">
+        <div class="columna">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Ej: María">
+        </div>
+        <div class="columna">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" placeholder="Ej: González">
+        </div>
+      </div>
 
-    <label>Teléfono:</label><br>
-    <input type="tel" name="telefono" placeholder="ej: 999999999" required><br><br>
-        <div class="select">
-  <select>
-   <option value="">Seleccione su nacionalidad</option>
-        <option value="chile">Chileno</option>
-        <option value="otra">Otra</option>
-  </select>
-</div>
-<br><br>
+      <label>Correo electrónico:</label>
+      <input type="email" placeholder="ej: javier@gmail.com"><br><br>
 
-    <label>Tipo de Género:</label><br>
-    <label><input type="radio" name="genero" value="masculino" required> Masculino</label><br>
-    <label><input type="radio" name="genero" value="femenino" required> Femenino</label><br>
-    <label><input type="radio" name="genero" value="otro" required> Prefiero no decir</label><br><br>
+      <label>Teléfono:</label>
+      <input type="tel" placeholder="ej: 999999999"><br><br>
 
-    <label>Biografía:</label><br>
-    <textarea name="biografia" rows="4" cols="30" placeholder="Cuéntanos algo sobre ti..." required></textarea><br>
-    <label><input type="checkbox" name="subcripcion" value="si" required> Deseo suscribirme </label><br><br>
-    <button class="button is-danger">Button</button>
-    <input type="submit" value="Registrarse">
+      <label>Género:</label>
+      <input type="radio" name="genero"> Masculino<br>
+      <input type="radio" name="genero"> Femenino<br>
+      <input type="radio" name="genero"> Otro<br><br>
 
-</body>
-</form>
+    <button class="button is-danger">Botón</button>
+    </form>
+  </div>
 </html>

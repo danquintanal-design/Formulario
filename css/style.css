@@ -1,0 +1,43 @@
+body {
+      background-color: #f5f5f3; 
+      margin: 0;
+      padding: 20px;
+      
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+      min-height: 100vh;       
+      font-family: Arial, sans-serif;
+    }
+
+    .tarjeta-formulario {
+      background-color: #ffffff; 
+      width: 100%;                  
+      max-width: 450px;          
+      padding: 30px;             
+      border-radius: 16px;       
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+    }
+
+    /* 1. Agrupador de cada campo (Label + Input) */
+    .campo {
+      margin-bottom: 16px; 
+    }
+
+    /* 2. Crear una fila para poner dos elementos lado a lado */
+    .fila {
+      display: flex;
+      gap: 12px; 
+    }
+
+    .columna {
+      flex: 1; 
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 6px; 
+    }
