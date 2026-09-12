@@ -1,41 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="petsitter" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>petsitter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+  
+  <!-- Ruta corregida apuntando a la carpeta css -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="tarjeta-formulario">
-    
-    <form>
-      <h2>Petsitter</h2>
-      
-      <div class="fila campo">
-        <div class="columna">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" placeholder="Ej: María">
-        </div>
-        <div class="columna">
-          <label for="apellido">Apellido</label>
-          <input type="text" id="apellido" placeholder="Ej: González">
-        </div>
-      </div>
 
-      <label>Correo electrónico:</label>
-      <input type="email" placeholder="ej: javier@gmail.com"><br><br>
+  <header class="navbar">
+    <div class="logo">
+      <span>PetSitter🐾</span>
+    </div>
 
-      <label>Teléfono:</label>
-      <input type="tel" placeholder="ej: 999999999"><br><br>
+    <div class="nav-botones">
+      <a href="login.html" class="btn btn-login">Iniciar Sesión</a>
+      <a href="registro.html" class="btn btn-registro">Registrarse</a>
+    </div>
+  </header>
 
-      <label>Género:</label>
-      <input type="radio" name="genero"> Masculino<br>
-      <input type="radio" name="genero"> Femenino<br>
-      <input type="radio" name="genero"> Otro<br><br>
-
-    <button class="button is-danger">Botón</button>
-    </form>
-  </div>
+</body>
 </html>
